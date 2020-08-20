@@ -1,4 +1,6 @@
 import * as SVG from "@svgdotjs/svg.js";
+import "@svgdotjs/svg.draggable.js";
+
 import { View } from "../view";
 import { canvas, width, background, height } from "../app";
 import { COLOURS } from "../style";
@@ -23,6 +25,11 @@ export default class SurveyView implements View
      * that triggers when a drag begins
      */
     private gradient: SVG.Rect;
+
+    /**
+     * draggable interests
+     */
+    private interests: SVG.Text[];
 
     constructor()
     {
@@ -64,6 +71,17 @@ export default class SurveyView implements View
             .y(20)
             .front()
             .hide();
+        
+        this.interests =
+        [
+            this.interest("computers"),
+            this.interest("helping others"),
+            this.interest("receiving help"),
+            this.interest("cultures"),
+            this.interest("politics"),
+            this.interest("languages"),
+            this.interest("books"),
+        ];
 
         // resize dynamically
         window.addEventListener('resize', e =>
@@ -78,28 +96,6 @@ export default class SurveyView implements View
             this.l_txt.cx(w * 0.25)
             this.r_txt.cx(w * 0.75)
         });
-
-        window.addEventListener('mousedown', e =>
-        {
-            const w = width();
-
-            this.gradient
-                .animate(500, '>', 0)
-                .cx(w * 0.5)
-                .attr("fill-opacity", "100%")
-                .width(w * 0.1);
-        });
-
-        window.addEventListener('mouseup', e =>
-        {
-            const w = width();
-
-            this.gradient
-                .animate(500, '-', 0)
-                .cx(w * 0.5)
-                .attr("fill-opacity", "0%")
-                .width(0);
-        });
     }
 
     start(): void
@@ -109,6 +105,8 @@ export default class SurveyView implements View
         this.gradient.show();
         this.l_txt.show();
         this.r_txt.show();
+
+        this.interests.forEach(i => i.show());
     }
 
     stop(): void
@@ -116,5 +114,63 @@ export default class SurveyView implements View
         this.gradient.hide();
         this.l_txt.hide();
         this.r_txt.hide();
-    } 
+
+        this.interests.forEach(i => i.hide());
+    }
+
+    /**
+     * create a new interest
+     */
+    private interest(name: string): SVG.Text
+    {
+        // clamped random number
+        const rand = () => Math.max(Math.min(Math.random(), 0.75), 0.25);
+
+        const w = width();
+        const h = height();
+
+        return canvas
+            .text(name)
+            .font({
+                family: 'Source Sans Pro',
+                size: '20pt',
+                anchor: 'middle',
+            })
+            .fill(COLOURS.txt_dark)
+            .cx(rand() * w * 0.5)
+            .cy(rand() * h)
+            .attr({ cursor: "pointer" })
+            .draggable()
+            .on('dragstart', (_: any) =>
+            {
+                const w = width();
+
+                this.gradient
+                    .animate(500, '>', 0)
+                    .cx(w * 0.5)
+                    .attr("fill-opacity", "100%")
+                    .width(w * 0.1);
+            })
+            .on('dragend', (e: any) =>
+            {
+                const w = width();
+
+                this.gradient
+                    .animate(500, '-', 0)
+                    .cx(w * 0.5)
+                    .attr("fill-opacity", "0%")
+                    .width(0);
+
+                const { handler, box } = e.detail;
+                const mid_delta = 0.5 - (box.cx / w);
+                const threshold = 0.075;
+
+                if (Math.abs(mid_delta) < threshold)
+                {
+                    handler.move(box.x - ((threshold - mid_delta) * w), box.y);
+                }
+            })
+            .front()
+            .hide();
+    }
 }
