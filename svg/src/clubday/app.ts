@@ -14,7 +14,7 @@ export const run = () =>
     background = new Background();
 
     // set view to root by default
-    set_view("/");
+    set_view("/survey");
 }
 
 /**
