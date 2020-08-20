@@ -45,7 +45,10 @@ export default class Background
         });
     }
 
-    public resize(frac: number, duration = 0.4): void
+    /**
+     * resize the background to the given left/right ratio, in duration ms
+     */
+    public resize(frac: number, duration = 400): void
     {
         // retreive the webview size
         const w = width();
@@ -57,10 +60,10 @@ export default class Background
 
         // animate
         this.lt
-            .animate(duration, '-', duration)
+            .animate(duration, '-', 0)
             .size(w * frac, h);
         this.rt
-            .animate(duration, '-', duration)
+            .animate(duration, '-', 0)
             .x(w * frac)
             .size(w * ( 1 - frac), h);
 

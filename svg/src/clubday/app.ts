@@ -9,7 +9,12 @@ export const run = () =>
     // ...
     console.log("world, hello");
 
-    let bg = new Background();
+    const bg = new Background();
+
+    window.addEventListener('click', e =>
+    {
+        bg.resize(Math.random());
+    });
 }
 
 /**
