@@ -9,11 +9,11 @@ export const run = () =>
     // ...
     console.log("world, hello");
 
-    const bg = new Background();
+    background = new Background();
 
     window.addEventListener('click', e =>
     {
-        bg.resize(Math.random());
+        background.resize(Math.random());
     });
 }
 
@@ -53,3 +53,8 @@ export const height = () =>
 export const canvas = new SVG.Svg()
     .addTo("#app")
     .size("100%", "100%");
+
+/**
+ * background to the webpage
+ */
+export let background: Background;
