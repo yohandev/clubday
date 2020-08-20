@@ -30,12 +30,14 @@ export default class Background
             .rect(w * 0.5, h)
             .x(0)
             .y(0)
-            .fill('#dd603e');
+            .fill('#dd603e')
+            .back();
         this.rt = canvas
             .rect(w * 0.5, h)
             .x(w * 0.5)
             .y(0)
-            .fill('#fbb03b');
+            .fill('#fbb03b')
+            .back();
 
         // resize dynamically
         window.addEventListener('resize', e =>
