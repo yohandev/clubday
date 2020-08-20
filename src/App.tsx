@@ -8,14 +8,14 @@ export const App =
 ( 
     <BrowserRouter>
         <Switch>
-            <Route path="/">
-                <Home />
-            </Route>
             <Route path="/survey">
                 <Survey />
             </Route>
             <Route path="/clubs">
                 <Clubs />
+            </Route>
+            <Route path="/">
+                <Home />
             </Route>
         </Switch>
     </BrowserRouter>

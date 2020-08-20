@@ -13,12 +13,12 @@ export default class Survey extends React.Component<Props, State>
             <>
             <div className="left" style={Styles.LEFT(0.5)}>
                 <h1>
-                Hello {name} from the left!
+                I'm not interested in...
                 </h1>
             </div>
             <div className="right" style={Styles.RIGHT(0.5)}>
                 <h1>
-                I'm on the right!
+                I'm interested in...
                 </h1>
             </div>
             </>
