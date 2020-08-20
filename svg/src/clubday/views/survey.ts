@@ -86,6 +86,7 @@ export default class SurveyView implements View
             this.gradient
                 .animate(500, '>', 0)
                 .cx(w * 0.5)
+                .attr("fill-opacity", "100%")
                 .width(w * 0.1);
         });
 
@@ -96,6 +97,7 @@ export default class SurveyView implements View
             this.gradient
                 .animate(500, '-', 0)
                 .cx(w * 0.5)
+                .attr("fill-opacity", "0%")
                 .width(0);
         });
     }
