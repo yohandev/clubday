@@ -16,6 +16,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@svgdotjs/svg.js": "^3.0.16"
+    "@svgdotjs/svg.js": "^3.0.16",
+    "@types/svg.js": "^2.3.1"
   }
 }
