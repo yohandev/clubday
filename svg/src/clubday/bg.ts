@@ -1,5 +1,6 @@
 import * as SVG from "@svgdotjs/svg.js";
 import { canvas, width, height } from "./app";
+import { COLOURS } from "./style";
 
 export default class Background
 {
@@ -30,13 +31,13 @@ export default class Background
             .rect(w * 0.5, h)
             .x(0)
             .y(0)
-            .fill('#dd603e')
+            .fill(COLOURS.bg_left)
             .back();
         this.rt = canvas
             .rect(w * 0.5, h)
             .x(w * 0.5)
             .y(0)
-            .fill('#fbb03b')
+            .fill(COLOURS.bg_right)
             .back();
 
         // resize dynamically
