@@ -3,7 +3,16 @@ LAHS Club Day 2020
 
 ## Building and running on localhost
 
-First install dependencies:
+Choose which project:
+```sh
+cd react
+```
+or
+```sh
+cd svg
+```
+
+Then install dependencies:
 
 ```sh
 npm install
