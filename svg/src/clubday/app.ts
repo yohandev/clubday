@@ -1,20 +1,20 @@
 import * as SVG from "@svgdotjs/svg.js";
 import Background from "./bg";
+import { ViewPath, View } from "./view";
+import RootView from "./views/root";
+import SurveyView from "./views/survey";
+import ResultsView from "./views/results";
 
 /**
  * 'main' method that runs the app
  */
 export const run = () =>
 {
-    // ...
-    console.log("world, hello");
-
+    // create background
     background = new Background();
 
-    window.addEventListener('click', e =>
-    {
-        background.resize(Math.random());
-    });
+    // set view to root by default
+    set_view("/");
 }
 
 /**
@@ -55,6 +55,43 @@ export const canvas = new SVG.Svg()
     .size("100%", "100%");
 
 /**
+ * switch the current view
+ */
+export const set_view = (path: ViewPath) =>
+{
+    // stop the current view
+    view()?.stop();
+
+    current = views[path];
+
+    // start the current view
+    view()?.start();
+}
+
+/**
  * background to the webpage
  */
 export let background: Background;
+
+/**
+ * complete map of all the views in this webpage
+ */
+export const views: { [key in ViewPath]: View } = 
+{
+    "/": new RootView(),
+    "/survey": new SurveyView(),
+    "/results": new ResultsView(),
+}
+
+/**
+ * current view
+ */
+let current: View | undefined;
+
+/**
+ * returns the currently active view
+ */
+export const view = () =>
+{
+    return current;
+}
