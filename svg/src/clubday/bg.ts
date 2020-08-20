@@ -39,9 +39,15 @@ export default class Background
         // resize dynamically
         window.addEventListener('resize', e =>
         {
-            console.log('resize...');
+            const w = width();
+            const h = height();
 
-            this.resize(this.fraction, 0.0);
+            // immediately scale
+            this.lt
+                .size(w * this.fraction, h);
+            this.rt
+                .size(w * ( 1 - this.fraction), h)
+                .x(w * this.fraction);
         });
     }
 
