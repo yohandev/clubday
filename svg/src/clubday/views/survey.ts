@@ -141,7 +141,7 @@ export default class SurveyView implements View
             .cy(rand() * h)
             .attr({ cursor: "pointer" })
             .draggable()
-            .on('dragstart', (_: any) =>
+            .on('dragstart', (e: any) =>
             {
                 const w = width();
 
@@ -150,6 +150,12 @@ export default class SurveyView implements View
                     .cx(w * 0.5)
                     .attr("fill-opacity", "100%")
                     .width(w * 0.1);
+                
+                const txt: SVG.Text = e.detail.handler.el;
+
+                txt
+                    .animate(250)
+                    .attr("font-size", "30pt");
             })
             .on('dragend', (e: any) =>
             {
@@ -161,6 +167,12 @@ export default class SurveyView implements View
                     .attr("fill-opacity", "0%")
                     .width(0);
 
+                const txt: SVG.Text = e.detail.handler.el;
+
+                txt
+                    .animate(250)
+                    .attr("font-size", "20pt");
+                
                 const { handler, box } = e.detail;
                 const mid_delta = 0.5 - (box.cx / w);
                 const threshold = 0.075;
