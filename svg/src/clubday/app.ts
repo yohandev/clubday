@@ -4,6 +4,7 @@ import { ViewPath, View } from "./view";
 import RootView from "./views/root";
 import SurveyView from "./views/survey";
 import ResultsView from "./views/results";
+import "./algo";
 
 /**
  * 'main' method that runs the app
