@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h1>
-            {{name}}
-        </h1>
+        <h1>Clubs page! MOTD: {{msg}}</h1>
     </div>
 </template>
 
@@ -17,7 +15,7 @@
         },
         created: function()
         {
-            
+            console.log("created clubs.vue");
         }
     });
 </script>
