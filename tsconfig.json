@@ -1,5 +1,6 @@
 {
-    "compilerOptions": {
+    "compilerOptions":
+    {
         "outDir": "./dist/",
         "sourceMap": true,
         "strict": true,
@@ -9,8 +10,10 @@
         "moduleResolution": "node",
         "target": "es5",
         "allowJs": true,
+        "jsx": "react",
     },
-    "include": [
+    "include":
+    [
         "./src/**/*"
     ]
 }
