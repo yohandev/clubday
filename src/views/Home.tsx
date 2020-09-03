@@ -7,7 +7,7 @@ const Home: React.FC = () =>
         <h1>
             los altos club day
         </h1>
-        <Button text="start" to="/"/>
+        <Button size={ 2 } text="start" to="/" />
     </div>
 );
 

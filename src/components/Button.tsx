@@ -8,6 +8,8 @@ interface Props
 {
     text: string,
     to: string,
+
+    size?: number,
 }
 
 /**
@@ -15,21 +17,30 @@ interface Props
  */
 const Button: React.FC<Props> = (props) =>
 (
-    <div>
-        <Link to={ props.to } style={ ButtonStyle }>
-            <h3>
-                { props.text }
-            </h3>
-        </Link>
-    </div>
+    <Link to={ props.to } style={{ textDecoration: 'none' }}>
+        <div style={ ButtonStyle(props.size ?? 2) }>
+            { props.text }
+        </div>
+    </Link>
 );
 
 /**
  * CSS style for the button
  */
-const ButtonStyle: React.CSSProperties =
-{
-    backgroundColor: 'black'
-}
+const ButtonStyle: (_: number) => React.CSSProperties = (size) =>
+({
+    backgroundColor: 'white',
+    //padding: `0em ${size}em`,
+
+    border: `${0.0375 * size}em solid black`,
+    borderRadius: `${0.25 * size}em`,
+    boxShadow: `0px ${0.0375 * size}em black`,
+
+    width: `${2 * size}em`,
+    height: `${0.75 * size}em`,
+
+    fontSize: `${size}em`,
+    textAlign: 'center',
+});
 
 export default Button;
