@@ -27,20 +27,19 @@ const Button: React.FC<Props> = (props) =>
 /**
  * CSS style for the button
  */
-const ButtonStyle: (_: number) => React.CSSProperties = (size) =>
+const ButtonStyle: (s: number) => React.CSSProperties = (size) =>
 ({
     backgroundColor: 'white',
-    //padding: `0em ${size}em`,
+    padding: `0.25em ${size * 1.5}em`,
 
-    border: `${0.0375 * size}em solid black`,
+    border: `${0.0375 * size}em solid #231f20`,
     borderRadius: `${0.25 * size}em`,
-    boxShadow: `0px ${0.0375 * size}em black`,
-
-    width: `${2 * size}em`,
-    height: `${0.75 * size}em`,
+    boxShadow: `0px ${0.0375 * size}em #231f20`,
 
     fontSize: `${size}em`,
     textAlign: 'center',
+    fontFamily: 'Source Sans Pro',
+    color: '#231f20'
 });
 
 export default Button;
