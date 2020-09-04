@@ -1,13 +1,12 @@
 import * as React from "react";
 import Button from "../components/Button";
+import Logo from "../components/Logo";
 
 const Home: React.FC = () =>
 (
     <div style={ CenterFlex }>
-        <h1>
-            los altos club day
-        </h1>
-        <Button size={ 2 } text="start" to="/" />
+        <Logo />
+        <Button size={ 1.75 } text="start" to="/" />
     </div>
 );
 
