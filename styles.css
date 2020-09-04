@@ -69,6 +69,9 @@ html, body
     font-size: 3.5em;
     font-family: 'Poppins';
     color: var(--shadow-colour);
+
+    -moz-user-select: none; /* Firefox */
+    user-select: none; /* Standard */
 }
 
 #home-logo-club
