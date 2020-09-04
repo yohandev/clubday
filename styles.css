@@ -20,7 +20,7 @@ html, body
     box-shadow: 0em 5px #231f20;
 
     font-size: 2em;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     color: var(--shadow-colour);
 
     padding: 0.25em 2em;
@@ -43,6 +43,35 @@ html, body
     outline: 0
 }
 
+.title
+{
+    text-overflow: clip;
+    white-space: nowrap;
+
+    font-size: 3.5em;
+    font-family: 'Poppins';
+    color: var(--shadow-colour);
+
+    user-select: none;
+}
+
+.title-reversed
+{
+    color: white;
+}
+
+.title-reversed::after
+{
+    color: var(--shadow-colour);
+    content: attr(data-text);
+
+    position: absolute;
+    transform: translateX(-100%);
+
+    -webkit-text-stroke: 15px var(--shadow-colour);
+    z-index: -2;
+}
+
 #home-body
 {
     width: 100%;
@@ -60,32 +89,6 @@ html, body
     left: 50%;
 
     transform: translate(-50%, -50%);
-
-    text-overflow: clip;
-    white-space: nowrap;
-
-    font-size: 3.5em;
-    font-family: 'Poppins';
-    color: var(--shadow-colour);
-
-    user-select: none;
-}
-
-#home-logo-club
-{
-    color: white;
-}
-
-#home-logo-club::after
-{
-    color: var(--shadow-colour);
-    content: attr(data-text);
-
-    position: absolute;
-    transform: translateX(-100%);
-
-    -webkit-text-stroke: 15px var(--shadow-colour);
-    z-index: -2;
 }
 
 #home-button
