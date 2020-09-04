@@ -133,9 +133,9 @@ html, body
     height: 75%;
 
     top: 5.5em;
-    padding-left: 5%;
+    padding: 5px 0% 5px 5%;
 
-    background-color: hotpink;
+    background-color: white;
 
     overflow: scroll;
 }
@@ -145,8 +145,13 @@ html, body
     width: 90%;
     height: 10%;
 
+    position: relative;
+    display: block;
+    margin: 10px;
+
     background-color: white;
 
-    border: 5px solid var(--shadow-colour);
-    box-sizing: border-box;
+    border: 3px solid #f2f2f2;
+    border-radius: 1em;
+    box-shadow: 0em 3px #f2f2f2;
 }
