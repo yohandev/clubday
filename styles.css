@@ -144,7 +144,7 @@ html, body
 .survey-list-item
 {
     width: 90%;
-    height: 10%;
+    height: 4em;
 
     position: relative;
     display: block;
@@ -155,4 +155,7 @@ html, body
     border: 3px solid var(--highlight-colour);
     border-radius: 1em;
     box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 4em;
+    padding-left: 1.5em;
 }
