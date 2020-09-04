@@ -1,6 +1,7 @@
 :root
 {
     --shadow-colour: #231f20;
+    --highlight-colour: #f2f2f2;
 }
 
 html, body
@@ -32,7 +33,7 @@ html, body
 
 .heavy-button:hover
 {
-    background-color: #f2f2f2;
+    background-color: var(--highlight-colour);
     box-shadow: 0em 0em;
 
     transform: translateY(5px);
@@ -151,7 +152,7 @@ html, body
 
     background-color: white;
 
-    border: 3px solid #f2f2f2;
+    border: 3px solid var(--highlight-colour);
     border-radius: 1em;
-    box-shadow: 0em 3px #f2f2f2;
+    box-shadow: 0em 3px var(--highlight-colour);
 }
