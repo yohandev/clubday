@@ -27,7 +27,8 @@ html, body
 
     transition-duration: 0.2s;
 
-    display: block;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 .heavy-button:hover
@@ -36,6 +37,11 @@ html, body
     box-shadow: 0em 0em;
 
     transform: translateY(5px);
+}
+
+.heavy-button:focus
+{
+    outline: 0
 }
 
 #home-body
