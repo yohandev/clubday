@@ -1,0 +1,21 @@
+{
+  "name": "lahs-club-day",
+  "version": "1.0.0",
+  "description": "website for los altos high school's 2020 club day",
+  "main": "index.js",
+  "author": "data analysis club",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html -d build/ --public-url ./"
+  },
+  "dependencies": {
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
