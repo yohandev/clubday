@@ -10,9 +10,11 @@
     "build": "parcel build index.html -d build/ --public-url ./"
   },
   "dependencies": {
-    "mithril": "^2.0.4"
+    "mithril": "^2.0.4",
+    "postcss-modules": "^3.2.2"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
