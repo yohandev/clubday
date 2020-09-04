@@ -7,8 +7,8 @@ const Survey =
 {
     view: () =>
     (
-        <div>
-            <h1 class="title">Select your interests</h1>
+        <div id="survey-body">
+            <h1 id="survey-title" class="title">select your &nbsp;<span data-text="interests" class="title-reversed">interests</span>&nbsp;...</h1>
             <button>continue</button>
         </div>
     )

@@ -107,3 +107,21 @@ html, body
 {
     transform: translate(-50%, calc(-150% + 3.5em + 5px));
 }
+
+#survey-body
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#survey-title
+{
+    margin: 0;
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+}
