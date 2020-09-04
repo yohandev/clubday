@@ -125,3 +125,16 @@ html, body
 
     transform: translate(-50%, 0%);
 }
+
+#survey-list
+{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+
+    top: 5.5em;
+
+    background-color: hotpink;
+
+    overflow: scroll;
+}
