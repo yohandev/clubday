@@ -1,3 +1,9 @@
+:root
+{
+    --shadow-colour: #231f20;
+    --logo-club-stroke-width: 2px;
+}
+
 html, body
 {
     margin: 0;
@@ -29,6 +35,26 @@ html, body
     white-space: nowrap;
 
     font-size: 3.5em;
+    font-family: 'Poppins';
+    color: var(--shadow-colour);
+}
+
+#home-logo-club
+{
+    color: white;
+}
+
+#home-logo-club::after
+{
+    color: var(--shadow-colour);
+    content: attr(data-text);
+
+    position: absolute;
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -webkit-text-stroke: 15px var(--shadow-colour);
+    z-index: -2;
 }
 
 #home-button
