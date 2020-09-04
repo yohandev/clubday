@@ -22,6 +22,8 @@ html, body
     font-size: 2em;
     font-family: 'Source Sans Pro';
     color: var(--shadow-colour);
+
+    padding: 0.25em 2em;
 }
 
 #home-body
@@ -72,12 +74,11 @@ html, body
 #home-button
 {
     margin: 5% 0;
-    padding: 1.5% 10%;
     position: absolute;
 
-    top: 35%;
+    top: 50%;
     left: 50%;
 
-    -ms-transform: translate(-50%, calc(-50% + 3.5em));
-    transform: translate(-50%, calc(-50% + 3.5em));
+    -ms-transform: translate(-50%, calc(-150% + 3.5em));
+    transform: translate(-50%, calc(-150% + 3.5em));
 }

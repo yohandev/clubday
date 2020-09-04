@@ -16,4 +16,6 @@ const Home =
     )
 }
 
+var buttonTimer = 0;
+
 export default Home;
