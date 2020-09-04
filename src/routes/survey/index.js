@@ -13,18 +13,20 @@ const Survey =
             <button>continue</button>
 
             <div id="survey-list">
-                <ul id="survey-list-table">
-                    <li>Move</li>
-                    <li>Or drag</li>
-                    <li>Each of the items</li>
-                    <li>To different positions</li>
-                </ul>
+                <div class="survey-list-item">Move</div>
+                <div class="survey-list-item">Or drag</div>
+                <div class="survey-list-item">Each of the items</div>
+                <div class="survey-list-item">To different positions</div>
             </div>
         </div>
     ),
     oncreate: () =>
     {
-        Sortable.create(document.getElementById("survey-list-table"))
+        Sortable.create(document.getElementById("survey-list"),
+        {
+            sort: true,
+            animation: 100,
+        })
     }
 }
 

@@ -133,8 +133,20 @@ html, body
     height: 75%;
 
     top: 5.5em;
+    padding-left: 5%;
 
     background-color: hotpink;
 
     overflow: scroll;
+}
+
+.survey-list-item
+{
+    width: 90%;
+    height: 10%;
+
+    background-color: white;
+
+    border: 5px solid var(--shadow-colour);
+    box-sizing: border-box;
 }
