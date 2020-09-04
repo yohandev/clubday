@@ -13,7 +13,7 @@ html, body
 
 .heavy-button
 {
-    color: white;
+    background-color: white;
 
     border-radius: 20px;
     border: 5px solid var(--shadow-colour);
@@ -24,6 +24,18 @@ html, body
     color: var(--shadow-colour);
 
     padding: 0.25em 2em;
+
+    transition-duration: 0.2s;
+
+    display: block;
+}
+
+.heavy-button:hover
+{
+    background-color: #f2f2f2;
+    box-shadow: 0em 0em;
+
+    transform: translateY(5px);
 }
 
 #home-body
@@ -81,4 +93,11 @@ html, body
 
     -ms-transform: translate(-50%, calc(-150% + 3.5em));
     transform: translate(-50%, calc(-150% + 3.5em));
+}
+
+/* explicitely redefined this behaviour from .heavy-button:hover */
+#home-button:hover
+{
+    -ms-transform: translate(-50%, calc(-150% + 3.5em + 5px));
+    transform: translate(-50%, calc(-150% + 3.5em + 5px));
 }
