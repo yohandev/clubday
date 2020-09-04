@@ -1,0 +1,45 @@
+html, body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+#home-body
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#home-logo
+{
+    margin: 0;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-overflow: clip;
+    white-space: nowrap;
+
+    font-size: 3.5em;
+}
+
+#home-button
+{
+    margin: 5% 0;
+    padding: 3% 15%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    -ms-transform: translate(-50%, calc(-50% + 3.5em));
+    transform: translate(-50%, calc(-50% + 3.5em));
+}

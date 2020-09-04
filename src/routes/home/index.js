@@ -7,10 +7,10 @@ const Home =
 {
     view: () =>
     (
-        <div>
-            <h1 class="title">LAHS Club Day 2020</h1>
+        <div id="home-body">
+            <h1 id="home-logo">lahs club day</h1>
             <a href="#!/survey">
-                <button>Start</button>
+                <button id="home-button">Start</button>
             </a>
         </div>
     )
