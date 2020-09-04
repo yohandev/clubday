@@ -10,7 +10,7 @@ const Home =
         <div id="home-body">
             <h1 id="home-logo">los altos <span data-text="club" id="home-logo-club">club</span> day</h1>
             <a href="#!/survey">
-                <button id="home-button">Start</button>
+                <button id="home-button" class="heavy-button">Start</button>
             </a>
         </div>
     )

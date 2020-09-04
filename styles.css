@@ -1,7 +1,6 @@
 :root
 {
     --shadow-colour: #231f20;
-    --logo-club-stroke-width: 2px;
 }
 
 html, body
@@ -10,6 +9,17 @@ html, body
     width: 100%;
     height: 100%;
     overflow: hidden
+}
+
+.heavy-button
+{
+    color: white;
+
+    border-radius: 2em;
+    border: 0.35em solid var(--shadow-colour);
+    box-shadow: 0em 0.5em #231f20;
+
+    color: var(--shadow-colour);
 }
 
 #home-body
