@@ -168,6 +168,9 @@ html, body
     font-weight: 600;
     font-style: normal;
     color: var(--shadow-colour);
+
+    user-select: none;
+    cursor: grab;
 }
 
 .survey-list-drag-icon
