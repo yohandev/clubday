@@ -31,7 +31,9 @@ const Survey =
             <h1 id="survey-title" class="title">select your &nbsp;<span data-text="interests" class="title-reversed">interests</span>&nbsp;...</h1>
             
             <h1 id="survey-subtitle" class="title">...then, press</h1>
-            <button id="survey-button" class="heavy-button">continue</button>
+            <a href="#!/clubs">
+                <button id="survey-button" class="heavy-button">continue</button>
+            </a>
 
             <div id="survey-list">
                 { ClubKeywords.map((key) => <SurveyItem keyword={ key } />) }
