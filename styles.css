@@ -22,6 +22,8 @@ html, body
 
     font-size: 2em;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-style: italic;
     color: var(--shadow-colour);
 
     padding: 0.25em 2em;
@@ -134,7 +136,7 @@ html, body
     height: 75%;
 
     top: 5.5em;
-    padding: 5px 0% 5px 5%;
+    padding: 5px 0% 5px 2.5%;
 
     background-color: white;
 
@@ -144,7 +146,7 @@ html, body
 .survey-list-item
 {
     width: 90%;
-    height: 4em;
+    height: 2em;
 
     position: relative;
     display: block;
@@ -153,9 +155,25 @@ html, body
     background-color: white;
 
     border: 3px solid var(--highlight-colour);
-    border-radius: 1em;
+    border-radius: 0.5em;
     box-shadow: 0em 3px var(--highlight-colour);
 
-    line-height: 4em;
-    padding-left: 1.5em;
+    line-height: 2em;
+    padding-left: 0.5em;
+
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
+}
+
+.survey-list-drag-icon
+{
+    color: var(--highlight-colour);
+
+    width: 25px;
+    transform: translate(-12.5px, 4.5px);
+
+    margin-right: -10px;
 }
