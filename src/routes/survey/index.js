@@ -3,6 +3,23 @@ import Sortable from "sortablejs"
 
 import DragIcon from "../../../assets/drag-indicator.svg"
 
+// TODO remove this hard-coded
+const ClubKeywords =
+[
+    "helping others",
+    "awareness",
+    "outreach",
+    "teamwork",
+    "community",
+    "disabilities",
+    "STEM",
+    "diversity",
+    "education",
+    "competition",
+    "design",
+    "art"
+]
+
 /**
  * survey route
  */
@@ -15,55 +32,15 @@ const Survey =
             <button>continue</button>
 
             <div id="survey-list">
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    
-                    helping others
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    awareness
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    outreach
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    teamwork
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    community
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    disabilities
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    STEM
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    diversity
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    education
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    competition
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    design
-                </div>
-                <div class="survey-list-item">
-                    <img src={ DragIcon } class="survey-list-drag-icon" />
-                    art
-                </div>
+            {
+                ClubKeywords.map((key) =>
+                    <div class="survey-list-item">
+                        <img src={ DragIcon } class="survey-list-drag-icon" />
+                        
+                        { key }
+                    </div>
+                )
+            }
             </div>
         </div>
     ),
