@@ -129,6 +129,30 @@ html, body
     transform: translate(-50%, 0%);
 }
 
+#survey-subtitle
+{
+    margin: 0;
+    position: absolute;
+
+    bottom: 3.25%;
+    right: calc(5% + 8.5em);
+
+    text-align: right;
+    font-size: 2em;
+
+    z-index: 1;
+}
+
+#survey-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: 5%;
+
+    z-index: 1;
+}
+
 #survey-list
 {
     position: absolute;
@@ -182,18 +206,3 @@ html, body
 
     margin-right: -10px;
 }
-
-#survey-button
-{
-    position: absolute;
-
-    bottom: 2.5%;
-    right: 5%;
-
-    z-index: 1;
-}
-
-/* explicitely redefined this behaviour from .heavy-button:hover */
-/* #survey-button:hover
-{
-} */
