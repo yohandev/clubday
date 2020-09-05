@@ -29,7 +29,7 @@ const Survey =
     (
         <div id="survey-body">
             <h1 id="survey-title" class="title">select your &nbsp;<span data-text="interests" class="title-reversed">interests</span>&nbsp;...</h1>
-            <button>continue</button>
+            <button id="survey-button" class="heavy-button">continue</button>
 
             <div id="survey-list">
                 { ClubKeywords.map((key) => <SurveyItem keyword={ key } />) }
