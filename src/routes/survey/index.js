@@ -1,7 +1,7 @@
 import m from "mithril" // this line is important! even if vscode detects this as dead code
 import Sortable from "sortablejs"
 
-import DragIcon from "../../../assets/drag-indicator.svg"
+import SurveyItem from "./item"
 
 // TODO remove this hard-coded
 const ClubKeywords =
@@ -32,15 +32,7 @@ const Survey =
             <button>continue</button>
 
             <div id="survey-list">
-            {
-                ClubKeywords.map((key) =>
-                    <div class="survey-list-item">
-                        <img src={ DragIcon } class="survey-list-drag-icon" />
-                        
-                        { key }
-                    </div>
-                )
-            }
+                { ClubKeywords.map((key) => <SurveyItem keyword={ key } />) }
             </div>
         </div>
     ),
