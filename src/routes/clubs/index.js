@@ -8,7 +8,7 @@ const Clubs =
     view: () =>
     (
         <div>
-            <h1 class="title">Clubs you'll like</h1>
+            <h1 id="clubs-title" class="title"><span data-text="clubs" class="title-reversed">clubs</span> &nbsp;for you!</h1>
         </div>
     )
 }

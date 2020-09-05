@@ -119,7 +119,7 @@ html, body
     position: relative;
 }
 
-#survey-title
+#survey-title, #clubs-title
 {
     margin: 0;
     position: absolute;
