@@ -10,6 +10,7 @@
     "build": "parcel build index.html -d build/ --public-url ./"
   },
   "dependencies": {
+    "comma-separated-values": "^3.6.4",
     "d": "^1.0.1",
     "mithril": "^2.0.4",
     "postcss-modules": "^3.2.2",
