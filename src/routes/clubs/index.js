@@ -17,7 +17,7 @@ const Clubs =
                 <Club name="green team" description="lorem ipsum" />
                 <Club name="green team" description="lorem ipsum" />
                 <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" />
+                <Club name="green team" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem m ipsumlorem ipsumlorem ipsumlorem m ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" />
                 <Club name="green team" description="lorem ipsum" />
                 <Club name="green team" description="lorem ipsum" />
                 <Club name="green team" description="lorem ipsum" />

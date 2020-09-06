@@ -245,10 +245,10 @@ html, body
     border-radius: 0.5em;
     box-shadow: 0em 3px var(--highlight-colour);
 
-    line-height: 2em;
-    padding-left: 0.5em;
+    line-height: 1em;
+    padding: 0em 0.5em 0em 0.5em;
 
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-style: normal;
