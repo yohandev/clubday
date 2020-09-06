@@ -13,26 +13,7 @@ const Clubs =
             <h1 id="clubs-title" class="title"><span data-text="clubs" class="title-reversed">clubs</span> &nbsp;for you!</h1>
         
             <div id="clubs-list">
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem m ipsumlorem ipsumlorem ipsumlorem m ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
-                <Club name="green team" description="lorem ipsum" />
+                <Club name="green team" description="lorem ipsum" keywords={["helping others", "environment"]} />
             </div>
         </div>
     )
