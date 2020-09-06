@@ -7,7 +7,7 @@ const Club =
 {
     view: (vnode) =>
     (
-        <div class="club-parent">
+        <div class="clubs-list-item">
             <h1> { vnode.attrs.name } </h1>
             <p> { vnode.attrs.description } </p>
         </div>

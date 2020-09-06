@@ -222,26 +222,35 @@ html, body
     height: calc(100% - 10em);
 
     top: 5.5em;
+    padding: 5px 0% 5px 2.5%;
 
-    background-color: pink;
+    background-color: white;
 
     overflow: scroll;
 
-    display: grid;
-    grid-template-columns: calc(33% - 26.666px) calc(33% - 26.666px) calc(33% - 26.666px);
-    column-gap: 20px;
-    row-gap: 20px;
-
-    padding: 20px 20px 20px 20px;
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
 }
 
-.club-parent
+.clubs-list-item
 {
-    background: white;
+    width: 90%;
 
-    width: 100%;
+    position: relative;
+    display: block;
+    margin: 10px;
 
-    border: 5px solid var(--highlight-colour);
+    background-color: white;
+
+    border: 3px solid var(--highlight-colour);
     border-radius: 0.5em;
-    box-shadow: 0em 5px var(--highlight-colour);
+    box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 2em;
+    padding-left: 0.5em;
+
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
 }
