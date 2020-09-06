@@ -1,41 +1,56 @@
-name,keywords,lacoin
-The Global Uplift Project (formerly known as ODFL),"Helping Others, Awareness, Outreach, Teamwork, Community",y
-Best Buddies,"Helping Others, Disabilities, Awareness, Outreach, Community",y
-Women in STEM,"STEM, Community, Helping Others, Diversity, Education",y
-Biomimicry Club,"STEM, Competition, Education, Design, Community",y
-Photography Club,"Art, Design, Creative, Community, Leisure",y
-Guitar Club,"Art, Music, Creative, Community, Leisure",n
-Russian Club,"Cultural, Community, Education, Helping Others, Leisure",n
-Buena Vista Youth Scholars (BVYS) ,"Education, Helping Others, Outreach, Awareness, Teamwork",y
-Mock Trial,"Creative, Public Speaking, Leadership, Community",y
-Data Analysis Club,"Leadership, Coding, Teamwork, Creative, STEM",y
-Competitive Investment Club (CIC) ,"STEM, Competitive, Teamwork, Food",n
-National Art Honors Society (NAHS) ,"Art, Helping Others, Community, Outreach, Teamwork ",y
-The Passion Project,"Helping Others, Education, Leadership, Community, Outreach",y
-Quiz Bowl Club,"Teamwork, Creative, Education, Leisure, Competition",y
-InspireAI,"Coding, STEM, Education, Design, Community",y
-Learning ASL Club,"Disabilities, Community, Awareness, Outreach, Helping Others",y
-Aerospace Club,"STEM, Design, Community, Creative, Education",n
-CodeSV,"STEM, Coding, Education, Design, Creative",y
-Interact,"Community, Leadership, Helping Others, Outreach, Awareness",y
-Math Club,"STEM, Education, Competition, Teamwork, Community",y
-Chess Club,"Sports, Teamwork, Community, Education, Creative",y
-Fellowship of Christian Athletes,"Sports, Leisure, Cultural, Helping Others, Community",n
-Culinary Club,"Food, Community, Creative, Education, Design",y
-Environmental Club (Green Team),"Environment, Awareness, Outreach, Teamwork, Community",y
-Students for Haiti Solidarity,"Education, Awareness, Outreach, Community, Leadership",y
-LAHS Esports,"Sports, Community, Teamwork, Competition, STEM, Leisure",y
-Amnesty International,"Community, Awareness, Outreach, Helping Others, Education ",n
-Kpop and Anime Club,"Community, Art, Music, Creative, Leisure",y
-Actively Aware,"Awareness, Outreach, Leadership, Community, Helping Others",y
-Team HBV,"Awareness, Community, Leadership, Diversity, Outreach",y
-MVLA Speech and Debate,"Public Speaking, Leadership, Outreach, Creative, Education",y
-Girl Up,"Diversity, Awareness, Helping Others, Leadership, Community",y
-Mu Alpha Theta,"STEM, Competition, Creative, Community, Education",y
-Philosophy Club,"Public Speaking, Cultural, Community, Awareness, Creative",y
-LAHS Volunteer Society ,"Helping Others, Community, Education, Outreach, Awareness",y
-Competitive Programming Club,"Coding, STEM, Competition, Community, Education",y
-Bike Club,"Sports, Creative, Community, Teamwork, Leisure",n
-InPrint,"Creative, Public Speaking, Community, Art, Leisure",y
-Model United Nations,"Public Speaking, Teamwork, Education, Leadership, Community",y
-LAHS UNICEF,"Helping others, Community, Creative, Awareness, Teamwork",y
+name,keywords,description,lacoin
+The Global Uplift Project (formerly known as ODFL),"Helping Others, Awareness, Outreach, Teamwork, Community",TGUP is a service club on campus that aims to create a change in third world countries by collecting just $1 from high school students. ,y
+Best Buddies,"Helping Others, Disabilities, Awareness, Outreach, Community",To facilitate friendships between LAHS students and people with intellectual or developmental disabilities. ,y
+Women in STEM,"STEM, Community, Helping Others, Diversity, Education",To promote equal representation in STEM by encouraging and supporting a growing community of women in STEM,y
+Biomimicry Club,"STEM, Competition, Education, Design, Community",To explore the work of nature and combat global issues through creative designs with interdisciplinary insights into biology and engineering.,y
+Photography Club,"Art, Design, Creative, Community, Leisure",Dedicated to teaching fellow students photography free of academic obligations. No background in photography needed!,y
+Guitar Club,"Art, Music, Creative, Community, Leisure","We'll learn and play guitar together (as best we can remotely), and we'll collaborate and create songs. This is a place for anybody that just wants to have fun and jam with other people; bassists, keyboardists, drummers, etc. are all welcome too. ",n
+Russian Club,"Cultural, Community, Education, Helping Others, Leisure",Spread awareness about the immensely sophisticated culture of Russia.,n
+Buena Vista Youth Scholars (BVYS) ,"Education, Helping Others, Outreach, Awareness, Teamwork","Buena Vista Youth Scholars is a program that  provides tutors, role models, and mentors to the children in the Buena Vista Mobile Home Park in Palo Alto.",y
+Mock Trial,"Creative, Public Speaking, Leadership, Community","The Mock Trial team competes in a simulated courtroom environment coached by real lawyers and presided over by county judges. Each year, we receive a new case from the county and prepare arguments for the prosecution and the defense, with different roles like attorneys, witnesses, clerks, bailiffs, etc. ",y
+Data Analysis Club,"Leadership, Coding, Teamwork, Creative, STEM","The Data Analysis Club is committed to making the school a better place through the power of Math, CS and critical thinking. We tutor, give lectures, and run year-long projects for LAHS students!",y
+Competitive Investment Club (CIC) ,"STEM, Competitive, Teamwork, Food","The Competitive Investment Club (CIC), promotes learning about investing and trading equity through competition. Students learn about the economy by participating in a stock market simulation and compete to learn and make the most profit.",n
+National Art Honors Society (NAHS) ,"Art, Helping Others, Community, Outreach, Teamwork ","We'll have meetings every Friday during lunch and expect members to volunteer through activities like the art auction, participation in refugee portrait project and the color run. ",y
+The Passion Project,"Helping Others, Education, Leadership, Community, Outreach",The function of The Passion Project club is to provide free activities to students from grades K-8. High schoolers who volunteer will be able to document service hours for teaching others what they love doing. ,y
+Quiz Bowl Club,"Teamwork, Creative, Education, Leisure, Competition",Promote quiz bowl participation and practice for tournaments.,y
+InspireAI,"Coding, STEM, Education, Design, Community",To teach students how to code with AI and deep learning in order to develop interesting and unique projects,y
+Learning ASL Club,"Disabilities, Community, Awareness, Outreach, Helping Others",ASL club is open to anyone who wants to learn how to sign (which is especially useful in times like these with everyone using masks). We we learn ASL together through watching videos and other activities. ,y
+Aerospace Club,"STEM, Design, Community, Creative, Education",The Aerospace Club is for people who are interested in aerospace and would like to learn about it and/or teach others about it. ,n
+CodeSV,"STEM, Coding, Education, Design, Creative",Our club plans to organize our free summer coding camps and recruit other students to help teach at these camps.   ,y
+Interact,"Community, Leadership, Helping Others, Outreach, Awareness","To empower high schoolers to lead effectively through various community service opportunities, while fundraising for district wide projects",y
+Math Club,"STEM, Education, Competition, Teamwork, Community","To help students foster interest in math outside the classroom through lectures, discussions and competitions. ",y
+Chess Club,"Sports, Teamwork, Community, Education, Creative","We want everyone to join chess club to hang out with some friends and play some games. Whether its Bug house (4 people) or Bullet (30 second games), we want everyone to have fun with it and be creative. ",y
+Fellowship of Christian Athletes,"Sports, Leisure, Cultural, Helping Others, Community","To present to athletes and coaches , and all whom they influence, the challenge and adventure of receiving Jesus Christ as Savior and Lord, serving Him in their relationships and in the fellowship of the church.",n
+Culinary Club,"Food, Community, Creative, Education, Design",To provide an environment in which brand-new and seasoned chefs alike can have fun in the kitchen.,y
+Environmental Club (Green Team),"Environment, Awareness, Outreach, Teamwork, Community",To foster a culture of environmental responsibility and sustainability at Los Altos High School and the local community through organizing both large scale and local events.,y
+Students for Haiti Solidarity,"Education, Awareness, Outreach, Community, Leadership","Students for Haiti Solidarity works closely with closely with people on the ground in Haiti to provide support for SOPUDEP, our sister school in Haiti, as well as working to fundraise money for the school. ",y
+LAHS Esports,"Sports, Community, Teamwork, Competition, STEM, Leisure",LAHS Esports is a welcoming gaming community for everyone interested in Esports. All skill levels are welcome and there are plenty of people to play with and against.,y
+Amnesty International,"Community, Awareness, Outreach, Helping Others, Education ","To advocate for human rights and raise awareness about social injustices, both locally and abroad.",n
+Kpop and Anime Club,"Community, Art, Music, Creative, Leisure","To create a place where students can come together, go on adventures and share their interests in kpop and anime",y
+Actively Aware,"Awareness, Outreach, Leadership, Community, Helping Others","Actively Aware is a local awareness club that works to inform our surrounding neighborhoods of current issues that would benefit from their help. Our efforts would go into having easily accessible information for resources of current issues including articles, links available for donations, and overall working to educate those around us on matters that need the attention through our online platforms and door to door distributions.",y
+Team HBV,"Awareness, Community, Leadership, Diversity, Outreach",To educate and spread awareness about Hepatitis B and discuss the disproportionate cases of Hepatitis B among AAPI communities. ,y
+MVLA Speech and Debate,"Public Speaking, Leadership, Outreach, Creative, Education","To promote public speaking skills, critical thinking, and global political awareness through practice and competition.",y
+Girl Up,"Diversity, Awareness, Helping Others, Leadership, Community",Girl Up's purpose is to educate and advocate for girls in third world countries as well as advocating for gender equality in our own community.,y
+Mu Alpha Theta,"STEM, Competition, Creative, Community, Education",Our club provides a deeper understanding of mathematical proofs and gives members an opportunity to expand on their knowledge and improve their problem-solving skills in an open discussion setting.,y
+Philosophy Club,"Public Speaking, Cultural, Community, Awareness, Creative","This club works on developing critical thinking and reflection, as well as interpersonal communication. This can be engaged through discussions, readings, and outside opportunities offered through the club.",y
+LAHS Volunteer Society ,"Helping Others, Community, Education, Outreach, Awareness",LAHS Volunteer Society aims to create a community centered around volunteering and create volunteering opportunities to high school students.,y
+Competitive Programming Club,"Coding, STEM, Competition, Community, Education",To teach college-level algorithmic thinking and prepare individuals and teams for online and local competitive programming competitions. ,y
+Bike Club,"Sports, Creative, Community, Teamwork, Leisure","The function of this club is to get people to be motivated to ride their bikes and use bikes as a means of transportation to school and other places. We will teach others how to fix and maintain a bicycle,  bring awareness to the sport of cycling, and show people how much fun riding a bike is.",n
+InPrint,"Creative, Public Speaking, Community, Art, Leisure","InPrint is a club dedicated to reviewing books that aren't as well known, especially advanced copies.",y
+Model United Nations,"Public Speaking, Teamwork, Education, Leadership, Community","To provide interested students with the ability to participate in Model UN conferences, both locally and nationally, which serve the purpose of simulating the real-life UN. Students will learn about and understand complex international issues, enhance oratory abilities, and collaborate to enact change.",y
+LAHS UNICEF,"Helping others, Community, Creative, Awareness, Teamwork",Our goal is to make the world (and the Bay Area) a better place by creating a community where LAHS students can kickstart projects and fundraisers for causes they care about.,y
+Los Altos Computer Science Club,"Computer Science, Data, Learning, Programming, Essential Skills","The function of this club is to help those who want to improve their Java skills; this will be especially helpful to those taking Intro to Computer Science and AP Computer Science! We cover everything that people learn in APCS, but we explain the material in more detail so that people can understand it better and do better on the AP test.",y
+LAHS Surfing Club,"Surfing, beach, adventure, sports",Our goal is to create a welcoming community for anyone that is interested in learning how to surf. ,y
+Chinese Culture Club,"Chinese, Culture, Language, Diversity, Outreach, Service",To promote interest in and enrich the community with Chinese language and culture.,n
+Dungeons and Dragons Club,"Dungeons and Dragons, dungeons, dragons, D&D, adventure, roleplay, leisure ",We want to create a space where people can learn and play D&D with their friends as well as meet new people who also love the game! <3,n
+girls. ,"Volunteer, destigmatize, women empowerment, feminism, service",We help girls in Africa who are in need of sanitary products by donating through the IFRC.,n
+RAINN ,"Feminism, Awareness, Equality ",RAINN aims to raise awareness for sexual harassment and assault in our immediate community. It is a safe place for survivors to come forward to get more resources and help. ,y
+Viva Venezuela,"Culture, awareness, service, ","Viva Venezuela seeks to make our community more aware of the hardships faced by the Venezuelan people. In addition, we aim to collect and send much-needed medical supplies to Venezuela.",y
+Card Club,"Cards, games, poker, leisure, fun",We'll play card games over online platforms and hang out on Zoom calls. ,n
+Peace in the Middle East Club,"Activism, Israel, Middle East, history, current events, food, culture",To create a safe space for students to learn and advocate for issues pertaining to the Israeli-Palestinian conflict and other Middle Eastern issues in hopes of bridging peace between various ethnicities in our community.,y
+Desks for Students,"service, building, charity, education","We aim to build desks for students in need in our community through fundraising, build-a-thons, desk drives",y
+Video Game Modifications Club,"video games, coding, modifications, creativity","In this club, we will be predominantly working with Java to make modifications to different video games. The club is open to anyone so coding experience does not matter.",y
+End Parkinson's LAHS,"Volunteering, Fundraising, Medicine, Health, Advocacy","Our club aims to fundraise, advocate, and educate others about Parkinson's Disease. Our mission is to contribute to efforts to end Parkinson's and support Parkinson's patients. We offer members opportunities to earn volunteer hours and a chance to help others.",y
+PBO (Pro-Bono Organizations) ,"Service, Community, Legal aid, Creativity ",Helping our society by fundraising money for organizations that offer pro-bono legal aid and raising awareness for causes in need,y
+LAHS Real Talk,"Politics, Civil Discourse, Community Engagement, Educational Enrichment","Real Talk seeks to empower youth with the skills and language necessary to engage in political discussion with empathy, curiosity, and respect. Our proprietary curriculum works to strengthen members’ critical thinking, news literacy, and civil discourse skills.",y
+Chemistry Olympiad,"Chemistry, Competition, Learn, Team, Olympiad",Chemistry Olympiad is an opportunity for students to further their chemistry knowledge beyond the classroom. The club aims to expand membership base by attracting students who may otherwise not have the opportunity. ,n

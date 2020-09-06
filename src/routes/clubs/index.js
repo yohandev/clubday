@@ -18,7 +18,7 @@ const Clubs =
             {
                 Clubs.database.map((club) =>
                 (
-                    <Club name={ club.name || "" } description="desc" keywords={ club.keywords || [] } />
+                    <Club name={ club.name || "" } description={ club.description || "" } keywords={ club.keywords || [] } />
                 ))
             }
             </div>
