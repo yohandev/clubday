@@ -6,18 +6,27 @@ import Storage from "../../storage"
 // TODO remove this hard-coded
 const ClubKeywords =
 [
-    "Helping Others",
-    "Awareness",
-    "Outreach",
-    "Teamwork",
-    "Community",
-    "Disabilities",
-    "STEM",
-    "Diversity",
-    "Education",
-    "Competition",
-    "Design",
-    "Art"
+    "Helping Others", 
+    "Awareness", 
+    "Outreach", 
+    "Teamwork", 
+    "Community", 
+    "Disabilities", 
+    "STEM", 
+    "Diversity", 
+    "Education", 
+    "Competition", 
+    "Design", 
+    "Art", 
+    "Creative", 
+    "Leisure", 
+    "Music", 
+    "Cultural", 
+    "Public Speaking", 
+    "Leadership", 
+    "Food", 
+    "Coding", 
+    "Sports"
 ]
 
 /**
