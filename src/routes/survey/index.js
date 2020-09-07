@@ -30,6 +30,11 @@ const ClubKeywords =
 ]
 
 /**
+ * whether or not the user discovered that you can scroll
+ */
+var scrolled = false;
+
+/**
  * survey route
  */
 const Survey =
@@ -41,11 +46,11 @@ const Survey =
 
             <h1 id="survey-subtitle" class="title">(scroll down to see all keywords)</h1>
             <h1 id="survey-footer" class="title">...then, press</h1>
-            <a href="#!/clubs">
+            <a href="#!/clubs" onclick={ Survey.discoveredscroll }>
                 <button id="survey-button" class="heavy-button" onclick={ Survey.sortclubs }>continue</button>
             </a>
 
-            <div id="survey-list">
+            <div id="survey-list" onscroll={ () => scrolled = true }>
                 { ClubKeywords.map((key) => <SurveyItem keyword={ key } />) }
             </div>
         </div>
@@ -68,6 +73,14 @@ const Survey =
 
         // sort by likes
         Storage.order = Storage.order.sort((a, b) => b.likes - a.likes)
+    },
+    discoveredscroll: () =>
+    {
+        if (scrolled)
+        {
+            return true;
+        }
+        return confirm("It appears you haven't scrolled down to see the complete list of keywords. Continue?");
     }
 }
 
