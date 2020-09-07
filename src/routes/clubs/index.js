@@ -15,10 +15,14 @@ const Clubs =
         
             <div id="clubs-list">
             {
-                Storage.clubs.map((club) =>
+                Storage.order.map((club) =>
                 (
                     <a href={`#!/club/${club.id}`} style="text-decoration: none;" target="_blank">
-                        <Club name={ club.name || "" } description={ club.description || "" } keywords={ club.keywords || [] } />
+                        <Club
+                            name={ Storage.clubs[club.id].name || "" }
+                            description={ Storage.clubs[club.id].description || "" }
+                            keywords={ Storage.clubs[club.id].keywords || [] }
+                        />
                     </a>
                 ))
             }

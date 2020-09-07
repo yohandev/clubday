@@ -7,6 +7,7 @@ import CSV from "comma-separated-values"
 const Storage =
 {
     clubs: [],
+    order: [],
     fetch: () =>
     {
         let req = new XMLHttpRequest();
@@ -19,6 +20,9 @@ const Storage =
             // parse .csv
             Storage.clubs = new CSV(txt, { header: true }).parse();
 
+            // reset order
+            Storage.order = [];
+
             // hand correct received data
             for (var i = 0; i < Storage.clubs.length; i++)
             {
@@ -29,6 +33,9 @@ const Storage =
                 
                 // place id
                 Storage.clubs[i].id = i
+
+                // populate order
+                Storage.order.push({ id: i, likes: 0 });
             }
 
             // redraw
