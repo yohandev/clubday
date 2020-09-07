@@ -12,7 +12,8 @@ const Clubs =
     (
         <div id="clubs-body">
             <h1 id="clubs-title" class="title"><span data-text="clubs" class="title-reversed">clubs</span> &nbsp;for you!</h1>
-        
+            {/* <h1 id="clubs-subtitle" class="title">(click the clubs to learn more)</h1> */}
+
             <div id="clubs-list">
             {
                 Storage.order.map((club) =>

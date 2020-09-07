@@ -144,7 +144,7 @@ html, body
     z-index: 1;
 }
 
-#survey-subtitle
+#survey-subtitle, #clubs-subtitle
 {
     margin: 0;
     position: absolute;
@@ -153,9 +153,6 @@ html, body
     left: 50%;
 
     font-size: 1.5em;
-
-    z-index: 5;
-
 
     transform: translate(-50%, 0%);
 }
@@ -335,7 +332,7 @@ a .clubs-list-item:hover
 {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 5em);
 
     padding: 5px 0% 5px 2.5%;
 
