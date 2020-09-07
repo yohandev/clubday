@@ -68,8 +68,6 @@ const Survey =
 
         // sort by likes
         Storage.order = Storage.order.sort((a, b) => b.likes - a.likes)
-
-        console.log(Storage.order)
     }
 }
 
