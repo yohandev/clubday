@@ -1,5 +1,4 @@
 import m from "mithril" // this line is important! even if vscode detects this as dead code
-import Sortable from "sortablejs"
 
 import SurveyItem from "./item"
 
@@ -41,14 +40,6 @@ const Survey =
             </div>
         </div>
     ),
-    oncreate: () =>
-    {
-        Sortable.create(document.getElementById("survey-list"),
-        {
-            sort: true,
-            animation: 100,
-        })
-    }
 }
 
 export default Survey;

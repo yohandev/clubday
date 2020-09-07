@@ -211,7 +211,7 @@ html, body
     color: var(--shadow-colour);
 
     user-select: none;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .survey-list-drag-icon
