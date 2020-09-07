@@ -318,7 +318,7 @@ a .clubs-list-item:hover
 {
     position: absolute;
     width: 100%;
-    height: calc(100% - 10em);
+    height: calc(100% - 5em);
 
     padding: 5px 0% 5px 2.5%;
 
@@ -327,4 +327,26 @@ a .clubs-list-item:hover
     overflow: scroll;
 
     mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+#club-info-join-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: 5%;
+
+    z-index: 1;
+}
+
+#club-info-zoom-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: calc(5% + 6.5em);
+
+    z-index: 1;
+
+    padding: 0.25em 1em;
 }

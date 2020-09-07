@@ -18,28 +18,36 @@ const ClubInfo =
         )
         :
         (
-            <div id="club-info">
-                <Club
-                    name={ Storage.clubs[vnode.attrs.id].name || "" }
-                    description={ Storage.clubs[vnode.attrs.id].description || "" }
-                    keywords={ Storage.clubs[vnode.attrs.id].keywords || [] }
-                />
-                <div class="clubs-list-item">
-                    <h2>What activities club members would be doing during their time?</h2>
-                    {
-                        Storage.clubs[vnode.attrs.id].activities
-                            .split('<br>')
-                            .map((ln) => (<p>{ ln }</p>))
-                    }
+            <div>
+                <div id="club-info">
+                    <Club
+                        name={ Storage.clubs[vnode.attrs.id].name || "" }
+                        description={ Storage.clubs[vnode.attrs.id].description || "" }
+                        keywords={ Storage.clubs[vnode.attrs.id].keywords || [] }
+                    />
+                    <div class="clubs-list-item">
+                        <h2>What activities club members would be doing during their time?</h2>
+                        {
+                            Storage.clubs[vnode.attrs.id].activities
+                                .split('<br>')
+                                .map((ln) => (<p>{ ln }</p>))
+                        }
+                    </div>
+                    <div class="clubs-list-item">
+                        <h2>What makes the club interesting/why should someone join?</h2>
+                        {
+                            Storage.clubs[vnode.attrs.id].interesting
+                                .split('<br>')
+                                .map((ln) => (<p>{ ln }</p>))
+                        }
+                    </div>
                 </div>
-                <div class="clubs-list-item">
-                    <h2>What makes the club interesting/why should someone join?</h2>
-                    {
-                        Storage.clubs[vnode.attrs.id].interesting
-                            .split('<br>')
-                            .map((ln) => (<p>{ ln }</p>))
-                    }
-                </div>
+                <a href={ Storage.clubs[vnode.attrs.id].signup }>
+                    <button id="club-info-join-button" class="heavy-button">join</button>
+                </a>
+                <a href={ Storage.clubs[vnode.attrs.id].zoom }>
+                    <button id="club-info-zoom-button" class="heavy-button">attend zoom</button>
+                </a>
             </div>
         )
     )
