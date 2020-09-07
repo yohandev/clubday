@@ -9,10 +9,12 @@ const SurveyItem =
 {
     view: (vnode) =>
     (
-        <div class="survey-list-item">
+        <div class="survey-list-item tooltip">
             <img src={ DragIcon } class="survey-list-drag-icon" />
             
             { vnode.attrs.keyword }
+
+            <span class="tooltiptext">Tooltip text</span>
         </div>
     )
 }
