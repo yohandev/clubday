@@ -403,4 +403,15 @@ a .clubs-list-item:hover
 {
     visibility: visible;
     opacity: 1;
-}  
+}
+
+.heart-icon
+{
+    transition-duration: 0.2s;
+}
+
+.heart-icon:hover
+{
+    transform-origin: center;
+    transform: scale(1.15);
+}
