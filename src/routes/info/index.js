@@ -18,12 +18,16 @@ const ClubInfo =
         )
         :
         (
-            <div>
+            <div id="club-info">
                 <Club
                     name={ Storage.clubs[vnode.attrs.id].name || "" }
                     description={ Storage.clubs[vnode.attrs.id].description || "" }
                     keywords={ Storage.clubs[vnode.attrs.id].keywords || [] }
                 />
+                <div class="clubs-list-item">
+                    <h2> what is love </h2>
+                    <p> baby don't hurt me </p>
+                </div>
             </div>
         )
     )
