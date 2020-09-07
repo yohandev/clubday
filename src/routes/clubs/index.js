@@ -18,7 +18,7 @@ const Clubs =
             {
                 Clubs.database.map((club) =>
                 (
-                    <Club name={ club.name || "" } description={ club.description || "" } keywords={ club.keywords || [] } />
+                    <Club id={ club.id } name={ club.name || "" } description={ club.description || "" } keywords={ club.keywords || [] } />
                 ))
             }
             </div>
@@ -36,12 +36,16 @@ const Clubs =
             // parse .csv
             Clubs.database = new CSV(txt, { header: true }).parse();
 
-            // parse keywords
+            // hand correct received data
             for (var i = 0; i < Clubs.database.length; i++)
             {
+                // parse keywords
                 Clubs.database[i].keywords = Clubs.database[i].keywords
                     .split(",")
                     .map((s) => s.trim())
+                
+                // place id
+                Clubs.database[i].id = i
             }
 
             // redraw

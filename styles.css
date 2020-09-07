@@ -253,6 +253,8 @@ html, body
     font-weight: 600;
     font-style: normal;
     color: var(--shadow-colour);
+
+    text-decoration: none;
 }
 
 .clubs-list-item h1
@@ -274,6 +276,12 @@ html, body
     line-height: 1.25em;
 
     margin: 0.25em 0 1em 0;
+}
+
+.clubs-list-item:hover
+{
+    border: 3px solid hsl(216, 54%, 81%);
+    box-shadow: 0em 3px hsl(216, 54%, calc(81% - 2.5%));
 }
 
 .clubs-list-item-tags-list

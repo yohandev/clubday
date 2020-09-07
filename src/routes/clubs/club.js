@@ -7,15 +7,17 @@ const Club =
 {
     view: (vnode) =>
     (
-        <div class="clubs-list-item">
-            <h1> { vnode.attrs.name } </h1>
+        <a href={`#!/club/${vnode.attrs.id}`} style="text-decoration: none;">
+            <div class="clubs-list-item">
+                <h1> { vnode.attrs.name } </h1>
 
-            <div class="clubs-list-item-tags-list">
-                { vnode.attrs.keywords.map((keyword) => <div class="clubs-list-item-tags-list-item">{ keyword }</div>) }
+                <div class="clubs-list-item-tags-list">
+                    { vnode.attrs.keywords.map((keyword) => <div class="clubs-list-item-tags-list-item">{ keyword }</div>) }
+                </div>
+
+                <p> { vnode.attrs.description }</p>
             </div>
-
-            <p> { vnode.attrs.description } </p>
-        </div>
+        </a>
     )  
 }
 
