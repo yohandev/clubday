@@ -25,8 +25,20 @@ const ClubInfo =
                     keywords={ Storage.clubs[vnode.attrs.id].keywords || [] }
                 />
                 <div class="clubs-list-item">
-                    <h2> what is love </h2>
-                    <p> baby don't hurt me </p>
+                    <h2>What activities club members would be doing during their time?</h2>
+                    {
+                        Storage.clubs[vnode.attrs.id].activities
+                            .split('<br>')
+                            .map((ln) => (<p>{ ln }</p>))
+                    }
+                </div>
+                <div class="clubs-list-item">
+                    <h2>What makes the club interesting/why should someone join?</h2>
+                    {
+                        Storage.clubs[vnode.attrs.id].interesting
+                            .split('<br>')
+                            .map((ln) => (<p>{ ln }</p>))
+                    }
                 </div>
             </div>
         )
