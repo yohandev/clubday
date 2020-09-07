@@ -1,22 +1,23 @@
 import m from "mithril" // this line is important! even if vscode detects this as dead code
 
 import SurveyItem from "./item"
+import Storage from "../../storage"
 
 // TODO remove this hard-coded
 const ClubKeywords =
 [
-    "helping others",
-    "awareness",
-    "outreach",
-    "teamwork",
-    "community",
-    "disabilities",
+    "Helping Others",
+    "Awareness",
+    "Outreach",
+    "Teamwork",
+    "Community",
+    "Disabilities",
     "STEM",
-    "diversity",
-    "education",
-    "competition",
-    "design",
-    "art"
+    "Diversity",
+    "Education",
+    "Competition",
+    "Design",
+    "Art"
 ]
 
 /**
@@ -32,7 +33,7 @@ const Survey =
             <h1 id="survey-subtitle" class="title">(scroll down to see all keywords)</h1>
             <h1 id="survey-footer" class="title">...then, press</h1>
             <a href="#!/clubs">
-                <button id="survey-button" class="heavy-button">continue</button>
+                <button id="survey-button" class="heavy-button" onclick={ Survey.sortclubs }>continue</button>
             </a>
 
             <div id="survey-list">
@@ -40,6 +41,27 @@ const Survey =
             </div>
         </div>
     ),
+    sortclubs: () =>
+    {
+        // assign likes
+        Storage.order.forEach((club) =>
+        {
+            club.likes = 0;
+
+            Storage.clubs[club.id].keywords.forEach((key) =>
+            {
+                if (Storage.likes[key])
+                {
+                    club.likes += 1;
+                }
+            })
+        })
+
+        // sort by likes
+        Storage.order = Storage.order.sort((a, b) => b.likes - a.likes)
+
+        console.log(Storage.order)
+    }
 }
 
 export default Survey;

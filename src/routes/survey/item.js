@@ -1,9 +1,5 @@
 import m from "mithril" // this line is important! even if vscode detects this as dead code
-
-/**
- * maps interests to whether it's liked or not
- */
-var liked = {};
+import Storage from "../../storage";
 
 /**
  * single keyword in the survey list of keywords
@@ -12,10 +8,10 @@ const SurveyItem =
 {
     view: (vnode) =>
     (
-        <div class="survey-list-item" onclick={ () => liked[vnode.attrs.keyword] = !liked[vnode.attrs.keyword]}>
+        <div class="survey-list-item" onclick={ () => Storage.likes[vnode.attrs.keyword] = !Storage.likes[vnode.attrs.keyword]}>
             <svg
-                fill={ liked[vnode.attrs.keyword] ? "var(--heart-colour)" : "var(--highlight-colour)" }
-                stroke={ liked[vnode.attrs.keyword] ? "var(--heart-colour)" : "#E2E2E2" }
+                fill={ Storage.likes[vnode.attrs.keyword] ? "var(--heart-colour)" : "var(--highlight-colour)" }
+                stroke={ Storage.likes[vnode.attrs.keyword] ? "var(--heart-colour)" : "#E2E2E2" }
                 stroke-width="3"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 48 48"
@@ -27,11 +23,7 @@ const SurveyItem =
             </svg>
             { vnode.attrs.keyword }
         </div>
-    ),
-    oninit: (vnode) =>
-    {
-        vnode.attrs.liked = false
-    }
+    )
 }
 
 export default SurveyItem;

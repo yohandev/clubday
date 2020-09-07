@@ -8,6 +8,7 @@ const Storage =
 {
     clubs: [],
     order: [],
+    likes: {},
     fetch: () =>
     {
         let req = new XMLHttpRequest();
