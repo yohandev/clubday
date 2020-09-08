@@ -1,35 +1,16 @@
-# clubday
-LAHS Club Day 2020
+# lahs club day
 
-## Building and running on localhost
+## Dev
 
-Choose which project:
-```sh
-cd react
+Server running at [http://localhost:1234](http://localhost:1234)
+
 ```
-or
-```sh
-cd svg
+npm run dev
 ```
+## Production build
 
-Then install dependencies:
+Built files will end up in build/
 
-```sh
-npm install
 ```
-
-To run in hot module reloading mode:
-
-```sh
-npm start
+npm run build
 ```
-
-To create a production build:
-
-```sh
-npm run build-prod
-```
-
-## Running
-
-Open the file `dist/index.html` in your browser

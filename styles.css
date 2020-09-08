@@ -1,0 +1,424 @@
+:root
+{
+    --shadow-colour: #081438;
+    --highlight-colour: #f2f2f2;
+    --heart-colour: #4c71d8;
+}
+
+html, body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.heavy-button
+{
+    background-color: white;
+
+    border-radius: 20px;
+    border: 5px solid var(--shadow-colour);
+    box-shadow: 0em 5px var(--shadow-colour);
+
+    font-size: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--shadow-colour);
+
+    padding: 0.25em 2em;
+
+    transition-duration: 0.2s;
+
+    user-select: none;
+}
+
+.heavy-button:hover
+{
+    background-color: var(--highlight-colour);
+    box-shadow: 0em 0em;
+
+    transform: translateY(5px);
+}
+
+.heavy-button:focus
+{
+    outline: 0
+}
+
+.title
+{
+    text-overflow: clip;
+    white-space: nowrap;
+
+    font-size: 3.5em;
+    font-family: 'Poppins';
+    color: var(--shadow-colour);
+
+    user-select: none;
+}
+
+.title-reversed
+{
+    color: white;
+}
+
+.title-reversed::after
+{
+    color: var(--shadow-colour);
+    content: attr(data-text);
+
+    position: absolute;
+    transform: translateX(-100%);
+
+    -webkit-text-stroke: 15px var(--shadow-colour);
+    z-index: -2;
+}
+
+#home-body
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#home-logo
+{
+    margin: 0;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#home-button
+{
+    margin: 5% 0;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, calc(-150% + 3.5em));
+}
+
+/* explicitely redefined this behaviour from .heavy-button:hover */
+#home-button:hover
+{
+    transform: translate(-50%, calc(-150% + 3.5em + 5px));
+}
+
+#survey-body
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#survey-title, #clubs-title
+{
+    margin: 0;
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+}
+
+#survey-footer
+{
+    margin: 0;
+    position: absolute;
+
+    bottom: 3.25%;
+    right: calc(5% + 8.5em);
+
+    text-align: right;
+    font-size: 2em;
+
+    z-index: 1;
+}
+
+#survey-subtitle, #clubs-subtitle
+{
+    margin: 0;
+    position: absolute;
+
+    top: 3em;
+    left: 50%;
+
+    font-size: 1.5em;
+
+    transform: translate(-50%, 0%);
+}
+
+#survey-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: 5%;
+
+    z-index: 1;
+}
+
+#survey-list
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 11em);
+
+    top: 6.5em;
+    padding: 5px 0% 5px 2.5%;
+
+    background-color: white;
+
+    overflow: scroll;
+
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+.survey-list-item
+{
+    width: 90%;
+    height: 2em;
+
+    position: relative;
+    display: block;
+    margin: 10px;
+
+    background-color: white;
+
+    border: 3px solid var(--highlight-colour);
+    border-radius: 0.5em;
+    box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 2em;
+    padding-left: 0.75em;
+
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
+
+    user-select: none;
+    cursor: pointer;
+
+    transition-duration: 0.25s;
+}
+
+.survey-list-item:hover
+{
+    background-color: white;
+    box-shadow: 0em 0em var(--highlight-colour);
+
+    transform: translateY(3px);
+}
+
+.survey-list-drag-icon
+{
+    width: 25px;
+    transform: translate(-12.5px, 4.5px);
+
+    margin-right: -10px;
+
+    /* filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.2)); */
+}
+
+#clubs-body
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#clubs-list
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 5em);
+
+    top: 5.5em;
+    padding: 5px 0% 5px 2.5%;
+
+    background-color: white;
+
+    overflow: scroll;
+
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+.clubs-list-item
+{
+    width: 90%;
+
+    position: relative;
+    display: block;
+    margin: 10px;
+
+    background-color: white;
+
+    border: 3px solid var(--highlight-colour);
+    border-radius: 0.5em;
+    box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 1em;
+    padding: 0em 1em 0em 1em;
+
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
+
+    text-decoration: none;
+}
+
+.clubs-list-item h1
+{
+    font-size: 3em;
+    font-weight: 700;
+    font-style: normal;
+
+    line-height: 1em;
+
+    margin: 0.25em 0 0.25em 0;
+}
+
+.clubs-list-item h2
+{
+    font-size: 2em;
+    font-weight: 700;
+    font-style: normal;
+
+    line-height: 1em;
+
+    margin: 0.25em 0 0.25em 0;
+}
+
+.clubs-list-item p
+{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+
+    line-height: 1.25em;
+
+    margin: 0.25em 0 1em 0;
+}
+
+a .clubs-list-item:hover
+{
+    border: 3px solid hsl(216, 54%, 81%);
+    box-shadow: 0em 3px hsl(216, 54%, calc(81% - 2.5%));
+}
+
+.clubs-list-item-tags-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.clubs-list-item-tags-list-item
+{
+    margin: 0px 10px 10px 0px;
+    padding: 0.5em 1em;
+
+    border-radius: 2em;
+
+    background-color: var(--highlight-colour);
+
+    font-size: 0.75em;
+}
+
+#club-info
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 5em);
+
+    padding: 5px 0% 5px 2.5%;
+
+    background-color: white;
+
+    overflow: scroll;
+
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+#club-info-join-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: 5%;
+
+    z-index: 1;
+}
+
+#club-info-zoom-button
+{
+    position: absolute;
+
+    bottom: 2.5%;
+    right: calc(5% + 6.5em);
+
+    z-index: 1;
+
+    padding: 0.25em 1em;
+}
+/* 
+.tooltip
+{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+} */
+
+.tooltip .tooltiptext
+{
+    visibility: hidden;
+
+    width: 120px;
+
+    background-color: white;
+
+    color: var(--shadow-colour);
+    text-align: center;
+
+    border: 2px solid var(--highlight-colour);
+    border-radius: 6px;
+
+    padding: 5px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.heart-icon
+{
+    transition-duration: 0.2s;
+}
+
+.heart-icon:hover
+{
+    transform-origin: center;
+    transform: scale(1.15);
+}
