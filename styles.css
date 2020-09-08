@@ -1,8 +1,8 @@
 :root
 {
-    --shadow-colour: #231f20;
+    --shadow-colour: #081438;
     --highlight-colour: #f2f2f2;
-    --heart-colour: #d8614c;
+    --heart-colour: #4c71d8;
 }
 
 html, body
@@ -19,7 +19,7 @@ html, body
 
     border-radius: 20px;
     border: 5px solid var(--shadow-colour);
-    box-shadow: 0em 5px #231f20;
+    box-shadow: 0em 5px var(--shadow-colour);
 
     font-size: 2em;
     font-family: 'Source Sans Pro', sans-serif;
