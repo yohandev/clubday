@@ -386,43 +386,6 @@ a .clubs-list-item:hover
 
     padding: 0.25em 1em;
 }
-/* 
-.tooltip
-{
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-} */
-
-.tooltip .tooltiptext
-{
-    visibility: hidden;
-
-    width: 120px;
-
-    background-color: white;
-
-    color: var(--shadow-colour);
-    text-align: center;
-
-    border: 2px solid var(--highlight-colour);
-    border-radius: 6px;
-
-    padding: 5px 0;
-    position: absolute;
-    z-index: 2;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext
-{
-    visibility: visible;
-    opacity: 1;
-}
 
 .heart-icon
 {
@@ -433,4 +396,49 @@ a .clubs-list-item:hover
 {
     transform-origin: center;
     transform: scale(1.15);
+}
+
+.tooltip
+{
+    position: relative;
+}
+
+.tooltiptext
+{
+    display: block;
+    position: absolute;
+
+    width: 225px;
+
+    background-color: var(--highlight-colour);
+
+    color: var(--shadow-colour);
+    text-align: center;
+
+    border-radius: 6px;
+
+    bottom: 12.5%;
+    left: 185%;
+
+    margin-left: -60px;
+    padding: 5px 0;
+
+    overflow: hidden;
+    z-index: 1;
+
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.1s;
+}
+  
+.tooltip:hover .tooltiptext, .tooltiptext:hover
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pseudo-link
+{
+    color: var(--heart-colour);
+    text-decoration: underline;
 }
