@@ -12,6 +12,7 @@ const Club =
 
             <div class="clubs-list-item-tags-list">
                 { vnode.attrs.keywords.map((keyword) => <div class="clubs-list-item-tags-list-item">{ keyword }</div>) }
+                { vnode.attrs.lacoin ? <div class="clubs-list-item-tags-list-item">LACoin</div> : undefined }
             </div>
 
             <p> { vnode.attrs.description }</p>

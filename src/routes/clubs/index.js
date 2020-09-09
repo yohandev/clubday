@@ -23,6 +23,7 @@ const Clubs =
                             name={ Storage.clubs[club.id].name || "" }
                             description={ Storage.clubs[club.id].description || "" }
                             keywords={ Storage.clubs[club.id].keywords || [] }
+                            lacoin={ (Storage.clubs[club.id].lacoin || 'n') == 'y' }
                         />
                     </a>
                 ))
