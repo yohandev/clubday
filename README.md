@@ -11,7 +11,7 @@ This website seeks to emulate LAHS' annual club day, but in a virtual fashion. I
 - Various suggestions from [ASB](https://lahsasb.org/) and the [other members of the 2020 semester Data Analysis Club](https://github.com/LAHS-Data/members).
 
 ## About the Data Analysis Club
-Just like the other clubs, we've got our own page on this site, at [https://clubday-df776.web.app/#!/club/9](https://clubday-df776.web.app/#!/club/9). Our other clubs-related project is LACoin, which can be found [here]().
+Just like the other clubs, we've got our own page on this site, at [https://clubday-df776.web.app/#!/club/9](https://clubday-df776.web.app/#!/club/9). Our other clubs-related project is LACoin, which can be found [here](https://docs.google.com/document/d/1SBuS_xbCK1BCOG-dEDVL0K8V8492HG_F564zkjOFu3Y/edit).
 
 
 ## For Developers
