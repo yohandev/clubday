@@ -1,14 +1,28 @@
-# lahs club day
+# Los Altos High School Club Day Website
 
-## Dev
+## About the Website
 
-Server running at [http://localhost:1234](http://localhost:1234)
+### Description
+This website seeks to emulate LAHS' annual club day, but in a virtual fashion. Its core functionality is providing a sorted list of clubs based off personal interests, effectively minimizing the amount of clubs glossed over while strengthening the user's incentive to join. The current version is available at [https://clubday-df776.web.app/](https://clubday-df776.web.app/).
 
+### Main Contributors
+- [Yohan Guyomard](https://github.com/yohandev)
+- [Ben Falkenburg](https://github.com/Peter-Pseudonym)
+- Various suggestions from [ASB](https://lahsasb.org/) and the [other members of the 2020 semester Data Analysis Club](https://github.com/LAHS-Data/members).
+
+## About the Data Analysis Club
+Just like the other clubs, we've got our own page on this site, at [https://clubday-df776.web.app/#!/club/9](https://clubday-df776.web.app/#!/club/9). Our other clubs-related project is LACoin, which can be found [here]().
+
+
+## For Developers
+
+### Hot-Reloaded Server
+Start a development server running at [http://localhost:1234](http://localhost:1234):
 ```
 npm run dev
 ```
-## Production build
 
+### Production build
 Built files will end up in build/
 
 ```

@@ -112,6 +112,18 @@ html, body
     transform: translate(-50%, calc(-150% + 3.5em + 5px));
 }
 
+#home-footer
+{
+    margin: 0;
+    position: absolute;
+
+    bottom: 0.1vh;
+    right: 1vw;
+
+    text-align: right;
+    font-size: 2vw;
+}
+
 #survey-body
 {
     width: 100%;

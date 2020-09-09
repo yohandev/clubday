@@ -12,6 +12,9 @@ const Home =
             <a href="#!/survey">
                 <button id="home-button" class="heavy-button">start</button>
             </a>
+            <a href="https://github.com/yohandev/clubday/blob/master/ABOUT.md" target="_blank">
+                <h1 id="home-footer" class="title">a project from the data analysis club</h1>
+            </a>
         </div>
     )
 }
