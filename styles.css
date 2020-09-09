@@ -415,13 +415,12 @@ a .clubs-list-item:hover
     color: var(--shadow-colour);
     text-align: center;
 
-    border-radius: 6px;
+    border-radius: 2em;
 
-    bottom: 12.5%;
-    left: 185%;
+    bottom: 0%;
+    left: 0%;
 
-    margin-left: -60px;
-    padding: 5px 0;
+    padding: 0.5em 0em;
 
     overflow: hidden;
     z-index: 1;
