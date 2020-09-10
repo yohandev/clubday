@@ -76,7 +76,9 @@ const Survey =
     },
     discoveredscroll: () =>
     {
-        if (scrolled)
+        const e = document.getElementById('survey-list');
+
+        if (scrolled || e.scrollHeight <= e.clientHeight)
         {
             return true;
         }
