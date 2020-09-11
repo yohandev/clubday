@@ -441,3 +441,34 @@ a .clubs-list-item:hover
     color: var(--heart-colour);
     text-decoration: underline;
 }
+
+#motd
+{
+    width: 95%;
+
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+    margin: 10px;
+
+    background-color: white;
+
+    border: 3px solid var(--highlight-colour);
+    border-radius: 0.5em;
+    box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 1em;
+    padding: 0em 1em 0em 1em;
+
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: var(--shadow-colour);
+
+    text-decoration: none;
+}
