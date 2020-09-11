@@ -17,8 +17,8 @@ const Home =
             />
 
             <h1 id="home-logo" class="title">los altos <span data-text="club" class="title-reversed">club</span> day</h1>
-            <a href="#!/survey">
-                <button id="home-button" class="heavy-button" onclick={ Home.onstartclicked }>start</button>
+            <a>
+                <button id="home-button" class="heavy-button" onclick={ () => alert("Club day hasn't started yet! Please come back on Wednesday 09/16/2020.") }>start</button>
             </a>
             <a href="https://github.com/yohandev/clubday/blob/master/README.md" target="_blank">
                 <h1 id="home-footer" class="title">a project from the data analysis club</h1>

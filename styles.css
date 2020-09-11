@@ -32,6 +32,8 @@ html, body
     transition-duration: 0.2s;
 
     user-select: none;
+
+    cursor: not-allowed;
 }
 
 .heavy-button:hover

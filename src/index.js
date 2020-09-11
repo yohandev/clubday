@@ -23,7 +23,7 @@ Analytics.init()
 m.route(root, "/home",
 {
     "/home": Home,
-    "/survey": Survey,
-    "/clubs": Clubs,
-    "/club/:id": ClubInfo,
+    // "/survey": Survey,
+    // "/clubs": Clubs,
+    // "/club/:id": ClubInfo,
 })
