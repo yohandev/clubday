@@ -2,6 +2,8 @@ import m from "mithril" // this line is important! even if vscode detects this a
 
 import Club from "../clubs/club";
 import Storage from "../../storage";
+import Analytics from "../../analytics";
+import Mobile from "../../utils/mobile";
 
 /**
  * club info page
@@ -43,14 +45,29 @@ const ClubInfo =
                     </div>
                 </div>
                 <a href={ Storage.clubs[vnode.attrs.id].signup }>
-                    <button id="club-info-join-button" class="heavy-button">join</button>
+                    <button
+                        id="club-info-join-button"
+                        class="heavy-button"
+                        onclick={ () => { if (vnode.attrs.ord) Analytics.report('join_club', { ord: vnode.attrs.ord, id: vnode.attrs.id }) }}
+                    >
+                        join
+                    </button>
                 </a>
-                <a href={ Storage.clubs[vnode.attrs.id].zoom }>
-                    <button id="club-info-zoom-button" class="heavy-button">attend zoom</button>
+                <a href={ Storage.clubs[vnode.attrs.id].zoom } onclick={ () => { if (Mobile.hastouch()) alert("zoom sessions will take place from 4:00PM to 4:30PM on wednesday") } }>
+                    <button
+                        id="club-info-zoom-button"
+                        class="heavy-button btntooltip"
+                        onclick={ () => { if (vnode.attrs.ord) Analytics.report('attend_zoom', { ord: vnode.attrs.ord, id: vnode.attrs.id }) }}
+                    >
+                            attend zoom
+                            &nbsp;
+                            <i class="fa fa-info-circle" style="font-size: 0.75em"></i>
+                            <span class="btntooltiptext">zoom sessions will take place from 4:00PM to 4:30PM on wednesday</span>
+                    </button>
                 </a>
             </div>
         )
-    )
+    ),
 }
 
 export default ClubInfo;

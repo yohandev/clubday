@@ -9,6 +9,7 @@ const Storage =
     clubs: [],
     order: [],
     likes: {},
+    sorted: false,
     fetch: () =>
     {
         let req = new XMLHttpRequest();
@@ -23,6 +24,7 @@ const Storage =
 
             // reset order
             Storage.order = [];
+            Storage.sorted = false;
 
             // hand correct received data
             for (var i = 0; i < Storage.clubs.length; i++)

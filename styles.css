@@ -441,3 +441,88 @@ a .clubs-list-item:hover
     color: var(--heart-colour);
     text-decoration: underline;
 }
+
+#motd
+{
+    width: 95%;
+
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+    margin: 10px;
+
+    background-color: white;
+
+    border: 3px solid var(--highlight-colour);
+    border-radius: 0.5em;
+    box-shadow: 0em 3px var(--highlight-colour);
+
+    line-height: 1em;
+    padding: 0em 1em 0em 1em;
+
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: var(--shadow-colour);
+
+    text-decoration: none;
+}
+
+.btntooltip .btntooltiptext
+{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    width: 15em;
+
+    padding: 15px 15px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: calc(-7.5em - 15px);
+
+    background-color: white;
+
+    font-size: 0.65em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
+    text-align: center;
+    
+
+    border-radius: 10px;
+    border: 2.5px solid var(--shadow-colour);
+
+    box-shadow: 0em 2.5px var(--shadow-colour);
+
+    z-index: 1;
+
+    transition-duration: 0.25s;
+}
+
+.btntooltip .btntooltiptext::after
+{
+    content: "";
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    margin-left: -20px;
+
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--shadow-colour) transparent transparent transparent;
+}
+
+.btntooltip:focus .btntooltiptext, .btntooltip:hover .btntooltiptext
+{
+    visibility: visible;
+    opacity: 1;
+}

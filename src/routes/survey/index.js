@@ -2,6 +2,7 @@ import m from "mithril" // this line is important! even if vscode detects this a
 
 import SurveyItem from "./item"
 import Storage from "../../storage"
+import Analytics from "../../analytics";
 
 // TODO remove this hard-coded
 const ClubKeywords =
@@ -46,8 +47,8 @@ const Survey =
 
             <h1 id="survey-subtitle" class="title">(scroll down to see all keywords)</h1>
             <h1 id="survey-footer" class="title">...then, press</h1>
-            <a href="#!/clubs" onclick={ Survey.discoveredscroll }>
-                <button id="survey-button" class="heavy-button" onclick={ Survey.sortclubs }>continue</button>
+            <a href="#!/clubs" onclick={ Survey.oncontinueclicked }>
+                <button id="survey-button" class="heavy-button">continue</button>
             </a>
 
             <div id="survey-list" onscroll={ () => scrolled = true }>
@@ -55,8 +56,20 @@ const Survey =
             </div>
         </div>
     ),
-    sortclubs: () =>
+    oncontinueclicked: () =>
     {
+        /* SCROLL CHECK */
+        const e = document.getElementById('survey-list');
+
+        if (!scrolled && e.scrollHeight > e.clientHeight)
+        {
+            if (!confirm("It appears you haven't scrolled down to see the complete list of keywords. Continue?"))
+            {
+                return false;
+            }
+        }
+
+        /* SORT CLUBS */
         // assign likes
         Storage.order.forEach((club) =>
         {
@@ -73,16 +86,12 @@ const Survey =
 
         // sort by likes
         Storage.order = Storage.order.sort((a, b) => b.likes - a.likes)
-    },
-    discoveredscroll: () =>
-    {
-        const e = document.getElementById('survey-list');
+        Storage.sorted = true;
 
-        if (scrolled || e.scrollHeight <= e.clientHeight)
-        {
-            return true;
-        }
-        return confirm("It appears you haven't scrolled down to see the complete list of keywords. Continue?");
+        /* ANALYTICS */
+        Analytics.report('selected_interests', Storage.likes)
+
+        return true;
     }
 }
 
