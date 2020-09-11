@@ -472,3 +472,57 @@ a .clubs-list-item:hover
 
     text-decoration: none;
 }
+
+.btntooltip .btntooltiptext
+{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    width: 15em;
+
+    padding: 15px 15px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: calc(-7.5em - 15px);
+
+    background-color: white;
+
+    font-size: 0.65em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--shadow-colour);
+    text-align: center;
+    
+
+    border-radius: 10px;
+    border: 2.5px solid var(--shadow-colour);
+
+    box-shadow: 0em 2.5px var(--shadow-colour);
+
+    z-index: 1;
+
+    transition-duration: 0.25s;
+}
+
+.btntooltip .btntooltiptext::after
+{
+    content: "";
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    margin-left: -20px;
+
+    border-width: 20px;
+    border-style: solid;
+    border-color: var(--shadow-colour) transparent transparent transparent;
+}
+
+.btntooltip:focus .btntooltiptext, .btntooltip:hover .btntooltiptext
+{
+    visibility: visible;
+    opacity: 1;
+}
