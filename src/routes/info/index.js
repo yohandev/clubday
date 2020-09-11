@@ -2,6 +2,7 @@ import m from "mithril" // this line is important! even if vscode detects this a
 
 import Club from "../clubs/club";
 import Storage from "../../storage";
+import Analytics from "../../analytics";
 
 /**
  * club info page
@@ -43,14 +44,26 @@ const ClubInfo =
                     </div>
                 </div>
                 <a href={ Storage.clubs[vnode.attrs.id].signup }>
-                    <button id="club-info-join-button" class="heavy-button">join</button>
+                    <button
+                        id="club-info-join-button"
+                        class="heavy-button"
+                        onclick={ () => { if (vnode.attrs.ord) Analytics.report('join_club', { ord: vnode.attrs.ord, id: vnode.attrs.id }) }}
+                    >
+                        join
+                    </button>
                 </a>
                 <a href={ Storage.clubs[vnode.attrs.id].zoom }>
-                    <button id="club-info-zoom-button" class="heavy-button">attend zoom</button>
+                    <button
+                        id="club-info-zoom-button"
+                        class="heavy-button"
+                        onclick={ () => { if (vnode.attrs.ord) Analytics.report('attend_zoom', { ord: vnode.attrs.ord, id: vnode.attrs.id }) }}
+                    >
+                        attend zoom
+                    </button>
                 </a>
             </div>
         )
-    )
+    ),
 }
 
 export default ClubInfo;

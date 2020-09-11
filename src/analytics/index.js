@@ -28,7 +28,7 @@ const Analytics =
     {
         Analytics.inner.logEvent(event, params);
 
-        console.log(`[Analytics] Reported ${event}` + (params ? `: ${params}` : ""));
+        console.log(`[Analytics] Reported ${event}` + (params ? `: ${JSON.stringify(params)}` : ""));
     }
 }
 
