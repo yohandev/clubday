@@ -1,10 +1,11 @@
-import firebase from "firebase/app"
+import firebase, { analytics } from "firebase/app"
 
 // services we're using...
 import "firebase/analytics"
 
 const Analytics =
 {
+    inner: undefined,
     init: () =>
     {
         // initialize Firebase
@@ -21,7 +22,13 @@ const Analytics =
         })
 
         // initialize services we're using
-        firebase.analytics()
+        Analytics.inner = firebase.analytics()
+    },
+    report: (event, params) =>
+    {
+        Analytics.inner.logEvent(event, params);
+
+        console.log(`[Analytics] Reported ${event}` + (params ? `: ${params}` : ""));
     }
 }
 
