@@ -12,7 +12,7 @@ const ClubKeywords =
     "Outreach", 
     "Teamwork", 
     "Community", 
-    "Disabilities", 
+    "Health/Disabilities", 
     "STEM", 
     "Diversity", 
     "Education", 
