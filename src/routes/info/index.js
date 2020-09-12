@@ -53,18 +53,34 @@ const ClubInfo =
                         join
                     </button>
                 </a>
-                <a href={ Storage.clubs[vnode.attrs.id].zoom } onclick={ () => { if (Mobile.hastouch()) alert("zoom sessions will take place from 4:00PM to 4:30PM on wednesday") } }>
-                    <button
-                        id="club-info-zoom-button"
-                        class="heavy-button btntooltip"
-                        onclick={ () => { if (vnode.attrs.ord) Analytics.report('attend_zoom', { ord: vnode.attrs.ord, id: vnode.attrs.id }) }}
-                    >
-                            attend zoom
-                            &nbsp;
-                            <i class="fa fa-info-circle" style="font-size: 0.75em"></i>
-                            <span class="btntooltiptext">zoom sessions will take place from 4:00PM to 4:30PM on wednesday</span>
-                    </button>
-                </a>
+                {
+                    Storage.clubs[vnode.attrs.id].zoom != 'none' ?
+                    <a href={ Storage.clubs[vnode.attrs.id].zoom } onclick={ () => { if (Mobile.hastouch()) alert("zoom sessions will take place from 4:00PM to 4:30PM on wednesday") } }>
+                        <button
+                            id="club-info-zoom-button"
+                            class="heavy-button btntooltip"
+                            onclick={ () =>
+                                {
+                                    if (vnode.attrs.ord)
+                                    {
+                                        Analytics.report('attend_zoom', { ord: vnode.attrs.ord, id: vnode.attrs.id })
+                                    }
+                                    console.log(Storage.clubs[vnode.attrs.id]);
+                                    if (Storage.clubs[vnode.attrs.id].password != 'none')
+                                    {
+                                        alert(`This club's zoom meeting requires a password: ${Storage.clubs[vnode.attrs.id].password}`)
+                                    }
+                                }
+                            }
+                        >
+                                attend zoom
+                                &nbsp;
+                                <i class="fa fa-info-circle" style="font-size: 0.75em"></i>
+                                <span class="btntooltiptext">zoom sessions will take place from 4:00PM to 4:30PM on wednesday</span>
+                        </button>
+                    </a>
+                    : undefined
+                }
             </div>
         )
     ),
