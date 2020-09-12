@@ -75,11 +75,11 @@ const Survey =
         {
             club.likes = 0;
 
-            Storage.clubs[club.id].keywords.forEach((key) =>
+            Storage.clubs[club.id].keywords.forEach((key, i) =>
             {
                 if (Storage.likes[key])
                 {
-                    club.likes += 1;
+                    club.likes += i == 0 ? 2 : 1;
                 }
             })
         })
