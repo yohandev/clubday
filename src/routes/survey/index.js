@@ -89,7 +89,15 @@ const Survey =
         Storage.sorted = true;
 
         /* ANALYTICS */
-        Analytics.report('selected_interests', Storage.likes)
+        let l = [];
+        for (let i in Storage.likes)
+        {
+            if (Storage.likes[i])
+            {
+                l.push(i)
+            }
+        }
+        Analytics.report('selected_interests', { interests: l.toString() })
 
         return true;
     }
