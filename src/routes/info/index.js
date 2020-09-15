@@ -27,6 +27,13 @@ const ClubInfo =
                         description={ Storage.clubs[vnode.attrs.id].description || "" }
                         keywords={ Storage.clubs[vnode.attrs.id].keywords || [] }
                     />
+                    {
+                        Storage.clubs[vnode.attrs.id].video == 'none' ? undefined :
+                        <div class="clubs-list-item">
+                            <h2>Introduction Video</h2>
+                            <iframe width="640" height="360" frameborder="0" src={ Storage.clubs[vnode.attrs.id].video }></iframe>
+                        </div>
+                    }
                     <div class="clubs-list-item">
                         <h2>What activities club members would be doing during their time?</h2>
                         {
