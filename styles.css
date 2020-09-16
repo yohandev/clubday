@@ -255,9 +255,9 @@ html, body
 {
     position: absolute;
     width: 100%;
-    height: calc(100% - 5em);
+    height: calc(100% - 7.5em);
 
-    top: 5.5em;
+    top: 7.5em;
     padding: 5px 0% 5px 2.5%;
 
     background-color: white;
