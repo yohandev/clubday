@@ -32,6 +32,10 @@ const ClubInfo =
                         <div class="clubs-list-item">
                             <h2>Introduction Video</h2>
                             <iframe width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src={ Storage.clubs[vnode.attrs.id].video }></iframe>
+                            {
+                                Storage.clubs[vnode.attrs.id].video2 == 'none' ? undefined :
+                                <iframe width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src={ Storage.clubs[vnode.attrs.id].video2 }></iframe>
+                            }
                         </div>
                     }
                     <div class="clubs-list-item">
