@@ -8,6 +8,7 @@ This website seeks to emulate LAHS' annual club day, but in a virtual fashion. I
 ### Main Contributors
 - [Yohan Guyomard](https://github.com/yohandev)
 - [Ben Falkenburg](https://github.com/Peter-Pseudonym)
+- [Vivek Chudasama](https://github.com/Vivekvc2021)
 - Various suggestions from [ASB](https://lahsasb.org/) and the [other members of the 2020 semester Data Analysis Club](https://github.com/LAHS-Data/members).
 
 ## About the Data Analysis Club
